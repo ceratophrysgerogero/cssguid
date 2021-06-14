@@ -1,0 +1,19 @@
+Atomic Design Methodology の考え方
+・Atoms 原子
+  int や title 最小限のモジュール
+
+・Molecules 分子
+  原子のグループ
+
+・Organisms 有機体
+  他の分子や原子を含むグループ
+
+・Templates テンプレート
+  上記三つを駆使してレイアウトを形成したもの
+  wordpressのテンプレートと同じ
+
+・Pages ページ
+  テンプレートに画像やテキストコンテンツを適用したもの
+
+
+
