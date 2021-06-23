@@ -1,47 +1,73 @@
-#main span{
-  color: #555;
-  font-size: 14px;
+/* ベース */
+
+body {
+  font-family: sans-serif;
 }
 
-#main div.module.main-module{
-  max-width: 1200px;
-  padding-right: 15px;
-  padding-left: 15px;
+/* レイアウト */
+
+.ly_cont {
   margin-right: auto;
   margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  max-width: 1200px;
+}
 
+/* モジュール */
+
+.bl_media {
   display: flex;
   align-items: center;
-  font-family: sans-serif;
   font-size: 16px;
   line-height: 1.5;
 }
 
+.bl_media__rev {
+  flex-direction: row-reverse;
+  text-align: right;
+}
 
-#main div.module.main-modulefigure{
+.bl_media__rev .bl_media_imageWrapper {
+  margin-right: 0;
+}
+
+.bl_media__rev .bl_media_body {
+  margin-right: 3.3333%;
+}
+
+.bl_media_imageWrapper {
   flex: 1 1 25%;
   margin-right: 3.33333%;
 }
 
-#main div.module.main-module img{
+.bl_media_imageWrapper img {
   width: 100%;
   vertical-align: top;
 }
 
-
-#main div.module.main-module div{
-  flex: 1 1 68.3%
+.bl_media_body {
+  flex: 1 1 68.3%;
 }
 
-#main div.module.main-module h2{
+.bl_media_tile {
   margin-bottom: 10px;
-  font-size: 18px;
   font-weight: bold;
+  font-size: 18px;
 }
 
-#main div.module.main-module h3{
+.sub-title {
   margin-top: 10px;
   margin-bottom: 10px;
+  border-bottom: 1px solid #555555;
   font-size: 16px;
-  border-bottom: 1px solid #555;
+}
+
+.bl_media_body>span {
+  color: #555555;
+  font-size: 14px;
+}
+
+.same {
+  width: 100px;
 }
